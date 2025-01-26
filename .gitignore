@@ -2,3 +2,6 @@
 **/secrets/**/*.zshenv
 *.secrets*
 .DS_Store
+*.rayconfig
+**/zed/conversations/
+**/zed/prompts/

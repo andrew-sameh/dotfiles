@@ -119,3 +119,5 @@ eval $(thefuck --alias fk)
 
 
 
+
+PATH=~/.console-ninja/.bin:$PATH
