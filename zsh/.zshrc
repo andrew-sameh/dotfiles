@@ -117,7 +117,4 @@ export NAP_CONFIG="$XDG_CONFIG_HOME/nap/config.yaml"
 eval $(thefuck --alias)
 eval $(thefuck --alias fk)
 
-
-
-
 PATH=~/.console-ninja/.bin:$PATH
