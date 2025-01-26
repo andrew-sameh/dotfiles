@@ -1,0 +1,4 @@
+**/secrets/**/*.zsh
+**/secrets/**/*.zshenv
+*.secrets*
+.DS_Store

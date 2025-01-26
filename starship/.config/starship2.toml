@@ -1,0 +1,334 @@
+
+"$schema" = 'https://starship.rs/config-schema.json'
+continuation_prompt = '▶▶ '
+
+format = """
+[](fg:color_bgx)\
+$os\
+$username\
+$hostname\
+$sudo\
+$shell\
+[](fg:color_bgx bg:color_bg1)\
+$directory\
+[](fg:color_bg1 bg:color_bg2)\
+$git_branch\
+$git_status\
+$git_state\
+$git_metrics\
+$git_commit\
+[](fg:color_bg2 bg:color_bg3)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$dart\
+$bun\
+$conda\
+$python\
+[](fg:color_bg3 bg:color_bg4)\
+$docker_context\
+$container\
+[](fg:color_bg4 bg:color_bg5)\
+$time\
+[](fg:color_bg5 bg:color_bg6)\
+$jobs\
+$memory_usage\
+$env_var\
+[](fg:color_bg6 bg:color_bg7)\
+$cmd_duration\
+[ ](fg:color_bg7)\
+$line_break$character"""
+
+palette = 'andrews'
+command_timeout = 500
+
+
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+orange = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
+
+
+[palettes.andrews]
+color_cream = '#fbf1c7'
+color_fg0 = '#665c54'
+color_bgx = '#F6DBBF'
+color_bg1 = '#F5ECDC'
+color_bg2 = '#F5C9D7'
+color_bg3 = '#A7B2DE'
+color_bg4 = '#F5F3F0'
+color_bg5 = '#A4D7E0'
+color_bg6 = '#CDDFC2'
+color_bg7 = '#fbf1c7'
+color_bg8 = '#D1BDFF'
+color_aqua = '#689d6a'
+color_green = '#98971a'
+color_orange = '#d65d0e'
+color_purple = '#b16286'
+color_red = '#cc241d'
+color_yellow = '#d79921'
+
+[fill]
+symbol = " "
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold green)"
+
+
+[shell]
+fish_indicator = '󰈺'
+bash_indicator = ''
+zsh_indicator = '⚡ '
+powershell_indicator = '⚡'
+# powershell_indicator = '_ '
+unknown_indicator = ' '
+style = "bg:color_bgx fg:color_fg0"
+disabled = false
+format = '[$indicator]($style)'
+
+
+[directory]
+read_only = " "
+format = "[   $path ]($style)"
+style = "fg:color_fg0 bg:color_bg1"
+
+[directory.substitutions]
+"Documents" = " 󰈙 "
+"Downloads" = "   "
+"Music" = " 󰝚  "
+"Pictures" = "   "
+"Developer" = " 󰲋  "
+
+
+# symbol = " "
+
+
+[git_metrics]
+disabled = false
+format = "[([+$added]($added_style bg:color_bg2) )([-$deleted]($deleted_style bg:color_bg2) )](bg:color_bg2)"
+
+[git_commit]
+commit_hash_length = 4
+style = "fg:color_fg0 bg:color_bg2"
+disabled = false
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+style = "fg:color_fg0 bg:color_bg2"
+disabled = false
+
+
+[git_branch]
+symbol = " "
+style = "bg:color_bg2"
+format = '[[ $symbol $branch ](fg:color_fg0 bg:color_bg2)]($style)'
+
+[git_status]
+conflicted = "⚔️ "
+ahead = "🏎️ 💨 ×${count} "
+behind = "🐢 ×${count} "
+diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢×${behind_count} "
+untracked = "🛤️ ×${count} "
+stashed = "📦 "
+modified = "📝 ×${count} "
+staged = "🗃️ ×${count} "
+renamed = "📛 ×${count} "
+deleted = "🗑️ ×${count} "
+#format = '([\[$all_status$ahead_behind\]]($style) )'
+format = '[($all_status$ahead_behind)](fg:color_fg0 bg:color_bg2)'
+
+
+[cmd_duration]
+style = "bg:color_bg7"
+format = '[[ $duration ](fg:color_fg0 bg:color_bg7)]($style)'
+
+[memory_usage]
+symbol = " 󰍛 "
+threshold = 75
+disabled = true
+style = "bg:color_bg6"
+format = '[[$symbol${ram}( | ${swap})](fg:color_fg0 bg:color_bg6)]($style)'
+
+[jobs]
+symbol = " "
+number_threshold = 1
+style = "bg:color_bg6"
+format = '[[ $symbol( $context) ](fg:color_fg0 bg:color_bg6)]($style)'
+
+[env_var.ENV]
+style = 'bg:color_bg6 fg:color_fg0'
+format = '[ $env_value ]($style)'
+
+[custom.stunnel]
+when = "ps aux | grep stunnel | grep -v grep"
+command = "ps -o etime= -p $(ps aux | grep stunnel | grep -v grep | awk '{print $2}')"
+style = "red"
+format = "[TUNNEL OPEN for $output]($style)"
+
+[username]
+show_always = false
+format = '[$user ](bg:color_bgx fg:color_fg0)'
+
+[hostname]
+ssh_only = false
+format = "[ $hostname ]($style)"
+trim_at = "-"
+style = "bg:color_bgx fg:color_fg0"
+disabled = false
+
+[os]
+disabled = false
+style = "bg:color_bgx fg:color_fg0"
+
+[os.symbols]
+Windows = "󱥒 "
+Ubuntu = "󰕈 "
+SUSE = " "
+Raspbian = "󰐿 "
+Mint = "󰣭 "
+Macos = "󰀵 "
+Manjaro = " "
+Linux = "󰌽 "
+Gentoo = "󰣨 "
+Fedora = "󰣛 "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = "󰣇 "
+Artix = "󰣇 "
+CentOS = " "
+Debian = "󰣚 "
+Redhat = "󱄛 "
+RedHatEnterprise = "󱄛 "
+
+
+[conda]
+style = "bold green"
+format = '[[ $symbol $environment ](fg:color_fg0 bg:color_bg3)]($style)'
+symbol = "🐍"
+
+
+[nodejs]
+symbol = "󰎙 "
+style = "bg:color_bg3"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_bg3)]($style)'
+
+[c]
+symbol = " "
+style = "bg:color_bg3"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_bg3)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:color_bg3"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_bg3)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:color_bg3"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_bg3)]($style)'
+
+[php]
+symbol = ""
+style = "bg:color_bg3"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_bg3)]($style)'
+
+[java]
+symbol = " "
+style = "bg:color_bg3"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_bg3)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:color_bg3"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_bg3)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:color_bg3"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_bg3)]($style)'
+
+[python]
+symbol = ""
+style = "bg:color_bg3"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_bg3)]($style)'
+
+[bun]
+symbol = "🍔"
+style = "bg:color_bg3"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_bg3)]($style)'
+
+[dart]
+symbol = ""
+style = "bg:color_bg3"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_bg3)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:color_bg4"
+format = '[[ $symbol( $context) ](fg:color_fg0 bg:color_bg4)]($style)'
+
+[time]
+disabled = false
+time_format = "%I:%M %p"
+# time_format = "%I:%M %p %Z"
+# use_12hr = true
+style = "bg:color_bg5"
+format = '[[ 🕙 $time ](fg:color_fg0 bg:color_bg5)]($style)'
+
+[container]
+style = "bg:color_bg4"
+format = '[$symbol \[$name\]](fg:color_fg0 bg:color_bg4) '
+
+[sudo]
+symbol = ' 󰒃 '
+disabled = false
+style = "bg:color_bgx fg:color_fg0"
+allow_windows = true
+
+
+[aws]
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+style = 'bold blue'
+symbol = '󰸏 '
+[aws.region_aliases]
+ap-southeast-2 = 'au'
+us-east-1 = 'va'
+[aws.profile_aliases]
+CompanyGroupFrobozzOnCallAccess = 'Frobozz'
+
+[azure]
+disabled = false
+format = 'on [$symbol($subscription)]($style) '
+symbol = '󰠅 '
+style = 'blue bold'

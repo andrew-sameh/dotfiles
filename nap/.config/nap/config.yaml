@@ -1,0 +1,17 @@
+# Configuration
+home: ~/.nap
+default_language: ts
+theme: catppuccin-mocha
+
+# Colors
+background: "#1E1E2E" # Base (mantle)
+foreground: "#F5E0DC" # Rosewater (light text)
+primary_color: "#F38BA8" # Red (pastel accent)
+primary_color_subdued: "#DDB6F2" # Lavender (subdued reddish accent)
+green: "#A6E3A1" # Green
+bright_green: "#B9F27C" # Lime
+bright_red: "#F38BA8" # Red
+red: "#EBA0AC" # Pastel red (soft)
+black: "#181825" # Crust (deep background)
+gray: "#585B70" # Surface2 (neutral)
+white: "#F5E0DC" # Rosewater (light)
