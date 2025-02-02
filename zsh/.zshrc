@@ -9,8 +9,9 @@ autoload -Uz compinit && compinit
 
 export LANG=en_US.UTF-8
 export EDITOR=/opt/homebrew/bin/nvim
+export TERM=xterm-256color
 export XDG_CONFIG_HOME="$HOME/.config"
-
+export DOTFILES="$HOME/dotfiles"
 ## Aliases
 #alias l='lsd -hA --group-dirs first'
 # Eza
@@ -56,6 +57,7 @@ alias ......="cd ../../../../.."
 
 # Zsh Source
 alias rezsh="source ~/.zshrc"
+alias zshconfig="nvim ~/.zshrc"
 
 # Zoxide
 alias cd="z"
@@ -67,6 +69,7 @@ alias retmux="source ~/.tmux.conf"
 alias wifipass="security find-generic-password -wa"
 alias c="clear"
 
+
 ## Python
 # Created by `pipx` on 2025-01-23 14:13:12
 export PATH="$PATH:/Users/andrew/.local/bin"
@@ -77,6 +80,7 @@ export POETRY_VIRTUALENVS_IN_PROJECT=true
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
+alias aple='source .venv/bin/activate'
 
 ## Go
 export GOPATH=$HOME/go
@@ -117,4 +121,9 @@ export NAP_CONFIG="$XDG_CONFIG_HOME/nap/config.yaml"
 eval $(thefuck --alias)
 eval $(thefuck --alias fk)
 
+# Consol-Ninja
 PATH=~/.console-ninja/.bin:$PATH
+
+# Tmuxifier
+export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
+eval "$(tmuxifier init -)"

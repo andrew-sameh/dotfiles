@@ -1,15 +1,31 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+--
+--
+-- Move selected lines up/down in Visual mode
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move lines down" })
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move lines up" })
 
-vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "N", "Nzzzv")
-vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+-- Keep search results centered
+vim.keymap.set("n", "n", "nzzzv", { desc = "Next match centered" })
+vim.keymap.set("n", "N", "Nzzzv", { desc = "Prev match centered" })
 
-vim.keymap.set("n", "<C-x>", "gg<S-v>G")
+-- Search & replace word under cursor
+vim.keymap.set(
+  "n",
+  "<leader>r",
+  [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+  { desc = "Replace word under cursor" }
+)
+
+-- Select all text
+vim.keymap.set("n", "<C-x>", "gg<S-v>G", { desc = "Select all" })
+
 vim.keymap.set("i", "jj", "<Esc>", { silent = true })
+
+vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous [D]iagnostic" })
+vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next [D]iagnostic" })
 
 -- Navigate vim panes better
 -- vim.keymap.set("n", "<c-k>", ":wincmd k<CR>")

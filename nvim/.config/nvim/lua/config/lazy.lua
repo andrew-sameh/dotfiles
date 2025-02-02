@@ -21,6 +21,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.editor.harpoon2" },
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
     { import = "lazyvim.plugins.extras.ai.copilot" },
+    { import = "lazyvim.plugins.extras.dap.core" },
+    { import = "lazyvim.plugins.extras.ai.copilot-chat" },
     { import = "lazyvim.plugins.extras.util.project" },
     { import = "lazyvim.plugins.extras.lang.go" },
     { import = "lazyvim.plugins.extras.lang.python" },
@@ -31,6 +33,8 @@ require("lazy").setup({
 
     -- import/override with your plugins
     { import = "plugins" },
+    -- import language configs
+    { import = "plugins.lang" },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.

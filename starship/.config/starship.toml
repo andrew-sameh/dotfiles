@@ -253,7 +253,10 @@ format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 [python]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+# format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+pyenv_version_name=true
+pyenv_prefix = "ℙ"
+format = '[[$symbol ${pyenv_prefix} (${version})( | $virtualenv)](fg:base bg:teal)]($style)'
 
 [bun]
 symbol = "🍔"

@@ -3,60 +3,46 @@ return {
     "catppuccin/nvim",
     lazy = true,
     name = "catppuccin",
-    opts = {
-      custom_highlights = function(colors)
+    opts = function(_, opts)
+      math.randomseed(os.time())
+      local choose = function(choices)
+        return choices[math.random(1, #choices)]
+      end
+      opts.custom_highlights = function(colors)
         return {
           LineNr = { fg = colors.sky },
           Comment = { fg = colors.teal },
           -- TabLineSel = { bg = colors.pink },
           -- CmpBorder = { fg = colors.surface2 },
           -- Pmenu = { bg = colors.none },
-        }
-      end,
-      transparent_background = true,
-      integrations = {
-        aerial = true,
-        alpha = true,
-        cmp = true,
-        dashboard = true,
-        flash = true,
-        gitsigns = true,
-        headlines = true,
-        illuminate = true,
-        indent_blankline = { enabled = true },
-        leap = true,
-        lsp_trouble = true,
-        mason = true,
-        markdown = true,
-        mini = true,
-        native_lsp = {
-          enabled = true,
-          underlines = {
-            errors = { "undercurl" },
-            hints = { "undercurl" },
-            warnings = { "undercurl" },
-            information = { "undercurl" },
+          DashboardHeader = {
+            fg = choose({
+              colors.sky,
+              colors.flamingo,
+              colors.pink,
+              colors.blue,
+              colors.yellow,
+              colors.peach,
+              colors.rosewater,
+              colors.red,
+              colors.maroon,
+              colors.mauve,
+              colors.teal,
+            }),
           },
-        },
-        -- flavour = "auto", -- latte, frappe, macchiato, mocha
-        -- term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
-        navic = { enabled = true, custom_bg = "lualine" },
-        neotest = true,
-        neotree = true,
-        noice = true,
-        notify = true,
-        semantic_tokens = true,
-        telescope = true,
-        treesitter = true,
-        treesitter_context = true,
-        which_key = true,
-      },
-    },
+          DashboardTitle = { fg = colors.teal, bold = true },
+          DashboardKey = { fg = colors.peach, bold = true },
+        }
+      end
+
+      opts.transparent_background = true
+      return opts
+    end,
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-frappe",
+      colorscheme = "catppuccin-mocha",
     },
   },
 }
