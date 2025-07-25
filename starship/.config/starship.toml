@@ -196,7 +196,7 @@ disabled = false
 format = "[([+$added]($added_style bg:green) )([-$deleted]($deleted_style bg:green) )](bg:green)"
 
 [git_commit]
-format='[\($hash$tag\) ]($style)'
+format = '[\($hash$tag\) ]($style)'
 commit_hash_length = 4
 style = "fg:base bg:green"
 disabled = false
@@ -254,7 +254,7 @@ format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 symbol = ""
 style = "bg:teal"
 # format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-pyenv_version_name=true
+pyenv_version_name = true
 pyenv_prefix = "ℙ"
 format = '[[$symbol ${pyenv_prefix} (${version})( | $virtualenv)](fg:base bg:teal)]($style)'
 
@@ -270,13 +270,12 @@ format = '[[ $symbol( $version) ](fg:base bg:team)]($style)'
 
 [docker_context]
 symbol = ""
-style = "bg:mantle"
-format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
-
+style = "bg:blue"
+format = '[[ $symbol( $context) ](fg:base bg:blue)]($style)'
 
 [container]
-style = "bg:mantle"
-format = '[$symbol \[$name\]](fg:base bg:color_bg3) '
+style = "bg:blue"
+format = '[[ $symbol \[$name\] ](fg:base bg:blue)]($style)'
 
 [time]
 disabled = false

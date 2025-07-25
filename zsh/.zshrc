@@ -8,6 +8,7 @@ fpath+=~/.zfunc
 autoload -Uz compinit && compinit
 
 export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8  
 export EDITOR=/opt/homebrew/bin/nvim
 export TERM=xterm-256color
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -54,6 +55,16 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
+
+# GCP
+alias gcpconf="gcloud config configurations list"
+alias gcpact="gcloud config configurations activate"
+alias gcpsetquota="gcloud auth application-default set-quota-project"
+alias gcpuse="gcloud config set project"
+alias gcpdeact="gcloud auth revoke"
+alias gcpinfo="gcloud info"
+alias gcpdauth="gcloud auth application-default login"
+alias gcpauth="gcloud auth login"
 
 # Zsh Source
 alias rezsh="source ~/.zshrc"
@@ -127,3 +138,20 @@ PATH=~/.console-ninja/.bin:$PATH
 # Tmuxifier
 export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
 eval "$(tmuxifier init -)"
+
+# Added by Windsurf
+export PATH="/Users/andrew/.codeium/windsurf/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/andrew/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/andrew/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/andrew/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/andrew/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/andrew/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
