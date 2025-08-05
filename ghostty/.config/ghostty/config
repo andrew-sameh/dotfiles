@@ -1,4 +1,4 @@
-background-opacity = 0.75
+background-opacity = 0.70
 background-blur-radius = 20
 font-size = 14
 font-family = "CaskaydiaCove Nerd Font"
@@ -6,3 +6,5 @@ theme = catppuccin-mocha
 macos-option-as-alt = true
 window-decoration = true
 mouse-hide-while-typing = true
+keybind = global:cmd+t=toggle_quick_terminal
+

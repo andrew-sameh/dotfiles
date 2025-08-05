@@ -133,7 +133,7 @@ eval $(thefuck --alias)
 eval $(thefuck --alias fk)
 
 # Consol-Ninja
-PATH=~/.console-ninja/.bin:$PATH
+
 
 # Tmuxifier
 export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
