@@ -80,6 +80,8 @@ alias retmux="source ~/.tmux.conf"
 alias wifipass="security find-generic-password -wa"
 alias c="clear"
 
+# brew
+alias brewdump='brew bundle dump --force --describe --file=~/Brewfile'
 
 ## Python
 # Created by `pipx` on 2025-01-23 14:13:12
