@@ -13,6 +13,10 @@ brew "bat"
 brew "btop"
 # Console Matrix
 brew "cmatrix"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# OpenAI's coding agent that runs in your terminal
+brew "codex"
 # Lightweight, framework-agnostic database migration tool
 brew "dbmate"
 # Modern, maintained replacement for ls
@@ -65,8 +69,6 @@ brew "python@3.11"
 brew "reattach-to-user-namespace"
 # Persistent key-value database, with built-in net interface
 brew "redis"
-# Search tool like grep and The Silver Searcher
-brew "ripgrep"
 # Extremely fast Python linter, written in Rust
 brew "ruff"
 # Display and control your Android device
