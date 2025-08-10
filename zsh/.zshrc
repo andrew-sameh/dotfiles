@@ -83,7 +83,7 @@ alias c="clear"
 
 ## Python
 # Created by `pipx` on 2025-01-23 14:13:12
-export PATH="$PATH:/Users/andrew/.local/bin"
+export PATH="$PATH:/Users/andrewsam/.local/bin"
 export PATH="$(brew --prefix python)/libexec/bin:$PATH"
 #Poetry
 export POETRY_VIRTUALENVS_IN_PROJECT=true
@@ -103,8 +103,12 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-you-should-use/you-should-use.plugin.zsh
 source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-eval "$(zoxide init zsh)"
+#
+# eval "$(zoxide init zsh)"
 
+if [ -z "$DISABLE_ZOXIDE" ]; then
+    eval "$(zoxide init zsh)"
+fi
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
@@ -115,10 +119,13 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
 
 # NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+ export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 # Color Script
 indexes=(30 39 56 55 51 49 30 29 4 21 11 2)
 random_index=${indexes[RANDOM % ${#indexes[@]}]}
@@ -132,18 +139,16 @@ export NAP_CONFIG="$XDG_CONFIG_HOME/nap/config.yaml"
 eval $(thefuck --alias)
 eval $(thefuck --alias fk)
 
-# Consol-Ninja
-PATH=~/.console-ninja/.bin:$PATH
 
 # Tmuxifier
 export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
 eval "$(tmuxifier init -)"
 
 # Added by Windsurf
-export PATH="/Users/andrew/.codeium/windsurf/bin:$PATH"
+export PATH="/Users/andrewsam/.codeium/windsurf/bin:$PATH"
 
 # pnpm
-export PNPM_HOME="/Users/andrew/Library/pnpm"
+export PNPM_HOME="/Users/andrewsam/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -151,7 +156,7 @@ esac
 # pnpm end
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/andrew/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/andrew/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/andrewsam/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/andrewsam/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/andrew/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/andrew/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/andrewsam/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/andrewsam/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
