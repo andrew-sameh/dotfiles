@@ -87,6 +87,8 @@ brew "telnet"
 brew "thefuck"
 # Terminal multiplexer
 brew "tmux"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
 # Internet file retriever
 brew "wget"
 # Blazing fast terminal file manager written in Rust, based on async I/O
