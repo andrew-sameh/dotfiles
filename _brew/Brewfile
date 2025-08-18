@@ -1,67 +1,136 @@
 tap "hashicorp/tap"
 tap "nikitabobko/tap"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Console Matrix
 brew "cmatrix"
+# OpenAI's coding agent that runs in your terminal
+brew "codex"
+# Lightweight, framework-agnostic database migration tool
 brew "dbmate"
+# Modern, maintained replacement for ls
 brew "eza"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Command-line fuzzy finder written in Go
 brew "fzf"
+# GitHub command-line tool
 brew "gh"
+# Distributed revision control system
 brew "git"
+# Fast linters runner for Go
 brew "golangci-lint"
+# Simple terminal UI for git commands
 brew "lazygit"
+# Fast, highly customisable system info script
 brew "neofetch"
+# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Manage multiple Node.js versions
 brew "nvm"
+# General-purpose data compression with high compression ratio
 brew "xz"
+# Execute binaries from Python packages in isolated environments
 brew "pipx"
+# Python version management
 brew "pyenv"
+# Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
+# Extremely fast Python linter, written in Rust
 brew "ruff"
+# Cross-shell prompt for astronauts
 brew "starship"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# Programmatically correct mistyped console commands
 brew "thefuck"
+# Terminal multiplexer
 brew "tmux"
+# Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Executes a program periodically, showing output fullscreen
 brew "watch"
+# Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
+# Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
+# Zsh port of Fish shell's history search
 brew "zsh-history-substring-search"
+# Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# ZSH plugin that reminds you to use existing aliases for commands you just typed
 brew "zsh-you-should-use"
+# Terraform
 brew "hashicorp/tap/terraform"
+# AeroSpace is an i3-like tiling window manager for macOS
 cask "aerospace"
+# Chromium based browser
 cask "arc"
+# Desktop password and login vault
 cask "bitwarden"
+# Web browser focusing on privacy
 cask "brave-browser"
+# Screen recording software
 cask "cap"
+# OpenAI's official ChatGPT desktop app
 cask "chatgpt"
+# Anthropic's official Claude AI desktop app
 cask "claude"
+# Terminal-based AI coding assistant
+cask "claude-code"
+# Write, edit, and chat about your code with AI
 cask "cursor"
+# Universal database tool and SQL client
 cask "dbeaver-community"
+# Utilities designed to make common development tasks easier
 cask "devtoys"
+# Set of tools to manage resources and applications hosted on Google Cloud
 cask "gcloud-cli"
+# Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Web browser
 cask "google-chrome"
+# Utility to hide menu bar items
 cask "hiddenbar"
+# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Open-source cross-platform alternative to AirDrop
 cask "localsend"
+# Open-source firewall to block unknown outgoing connections
 cask "lulu"
+# Open-source, self-hosted Slack-alternative
 cask "mattermost"
+# App to write, plan, collaborate, and get organised
 cask "notion"
+# Replacement for Docker Desktop
 cask "orbstack"
+# Collaboration platform for API development
 cask "postman"
+# Proxy client
 cask "proxifier"
+# Control your tools with a few keystrokes
 cask "raycast"
+# Team communication and collaboration software
 cask "slack"
+# Music streaming service
 cask "spotify"
+# Spotify and iTunes in the menu bar
 cask "spotmenu"
+# System monitor for the menu bar
 cask "stats"
+# Open-source media center
 cask "stremio"
+# Text editor for code, markup and prose
 cask "sublime-text"
+# Open-source code editor
 cask "visual-studio-code"
+# Rust-based terminal
 cask "warp"
+# Native desktop client for WhatsApp
 cask "whatsapp"
+# Multiplayer code editor
 cask "zed"
 vscode "aaron-bond.better-comments"
 vscode "adpyke.codesnap"

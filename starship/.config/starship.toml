@@ -32,11 +32,11 @@ $dart\
 $docker_context\
 $container\
 [](fg:blue bg:purple)\
-$time\
 $cmd_duration\
 [ ](fg:purple)\
 $line_break$character"""
 
+# $time\
 palette = 'catppuccin_mocha'
 
 [palettes.gruvbox_dark]
@@ -170,8 +170,8 @@ truncation_symbol = "…/"
 "Developer" = "󰲋 "
 
 [git_branch]
-symbol = ""
-# symbol = " "
+# symbol = ""
+symbol = " "
 style = "bg:teal"
 format = '[[ $symbol $branch ](fg:base bg:green)]($style)'
 
@@ -269,8 +269,10 @@ style = "bg:color_bg3"
 format = '[[ $symbol( $version) ](fg:base bg:team)]($style)'
 
 [docker_context]
-symbol = ""
+# symbol = ""
+symbol = "🐋"
 style = "bg:blue"
+# format = '[[ $symbol ](fg:base bg:blue)]($style)'
 format = '[[ $symbol( $context) ](fg:base bg:blue)]($style)'
 
 [container]

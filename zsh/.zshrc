@@ -71,7 +71,7 @@ alias rezsh="source ~/.zshrc"
 alias zshconfig="nvim ~/.zshrc"
 
 # Zoxide
-alias cd="z"
+# alias cd="z"
 
 # Tmux
 alias retmux="source ~/.tmux.conf"
@@ -81,7 +81,8 @@ alias wifipass="security find-generic-password -wa"
 alias c="clear"
 
 # Brew
-alias brewdump= "brew bundle dump --file=~/Brewfile --force"
+alias brewdump='brew bundle dump --force --describe --file=~/Brewfile'
+alias ccupgrade='brew upgrade --cask claude-code'
 
 ## Python
 # Created by `pipx` on 2025-01-23 14:13:12
@@ -108,9 +109,11 @@ source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring
 #
 # eval "$(zoxide init zsh)"
 
+
 if [ -z "$DISABLE_ZOXIDE" ]; then
-    eval "$(zoxide init zsh)"
+    eval "$(zoxide init --cmd cd zsh)"
 fi
+
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
