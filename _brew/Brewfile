@@ -119,6 +119,8 @@ cask "android-platform-tools"
 cask "beyond-compare"
 # Desktop password and login vault
 cask "bitwarden"
+# Terminal-based AI coding assistant
+cask "claude-code"
 # Utilities designed to make common development tasks easier
 cask "devtoys"
 # Voice and text chat software
