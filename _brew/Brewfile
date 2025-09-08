@@ -28,6 +28,8 @@ brew "neofetch"
 brew "neovim"
 # Manage multiple Node.js versions
 brew "nvm"
+# Password manager
+brew "pass"
 # General-purpose data compression with high compression ratio
 brew "xz"
 # Execute binaries from Python packages in isolated environments
@@ -50,6 +52,8 @@ brew "tmux"
 brew "uv"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
+# Library to create, extract, and modify Windows Imaging files
+brew "wimlib"
 # Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
 # Shell extension to navigate your filesystem faster
@@ -68,6 +72,8 @@ brew "hashicorp/tap/terraform"
 cask "aerospace"
 # Chromium based browser
 cask "arc"
+# Compare files and folders
+cask "beyond-compare"
 # Desktop password and login vault
 cask "bitwarden"
 # Web browser focusing on privacy
@@ -104,6 +110,8 @@ cask "lulu"
 cask "mattermost"
 # App to write, plan, collaborate, and get organised
 cask "notion"
+# Calculator and converter application
+cask "numi"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Collaboration platform for API development
@@ -124,6 +132,8 @@ cask "stats"
 cask "stremio"
 # Text editor for code, markup and prose
 cask "sublime-text"
+# Open-source BitTorrent client
+cask "transmission"
 # Open-source code editor
 cask "visual-studio-code"
 # Rust-based terminal
@@ -136,7 +146,6 @@ vscode "aaron-bond.better-comments"
 vscode "adpyke.codesnap"
 vscode "adpyke.vscode-sql-formatter"
 vscode "alefragnani.project-manager"
-vscode "alexdauenhauer.catppuccin-noctis"
 vscode "anthropic.claude-code"
 vscode "artdiniz.strike-vscode"
 vscode "arvkevi.listipy"
@@ -145,6 +154,7 @@ vscode "bierner.color-info"
 vscode "bradlc.vscode-tailwindcss"
 vscode "catppuccin.catppuccin-vsc"
 vscode "catppuccin.catppuccin-vsc-icons"
+vscode "charliermarsh.ruff"
 vscode "christian-kohler.path-intellisense"
 vscode "dart-code.dart-code"
 vscode "dart-code.flutter"
@@ -184,9 +194,9 @@ vscode "prisma.prisma"
 vscode "redhat.vscode-xml"
 vscode "streetsidesoftware.code-spell-checker"
 vscode "svelte.svelte-vscode"
-vscode "tabnine.tabnine-vscode"
 vscode "tamasfe.even-better-toml"
 vscode "twxs.cmake"
+vscode "vscodevim.vim"
 vscode "wayou.vscode-todo-highlight"
 vscode "wholroyd.jinja"
 vscode "wix.vscode-import-cost"
