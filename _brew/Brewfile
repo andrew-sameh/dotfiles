@@ -119,6 +119,8 @@ cask "android-platform-tools"
 cask "beyond-compare"
 # Desktop password and login vault
 cask "bitwarden"
+# Mobile gaming platform
+cask "bluestacks"
 # Terminal-based AI coding assistant
 cask "claude-code"
 # Utilities designed to make common development tasks easier
@@ -136,8 +138,12 @@ cask "hiddenbar"
 cask "karabiner-elements"
 # Open-source cross-platform alternative to AirDrop
 cask "localsend"
+# Open-source firewall to block unknown outgoing connections
+cask "lulu"
 # Open-source, self-hosted Slack-alternative
 cask "mattermost"
+# Calculator and converter application
+cask "numi"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # Replacement for Docker Desktop
@@ -150,6 +156,8 @@ cask "spotmenu"
 cask "stats"
 # Text editor for code, markup and prose
 cask "sublime-text"
+# Open-source BitTorrent client
+cask "transmission"
 # Native desktop client for WhatsApp
 cask "whatsapp"
 # Agentic IDE powered by AI Flow paradigm
