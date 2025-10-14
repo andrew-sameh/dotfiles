@@ -108,9 +108,11 @@ source $(brew --prefix)/share/zsh-you-should-use/you-should-use.plugin.zsh
 source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # eval "$(zoxide init zsh)"
-if [ -z "$DISABLE_ZOXIDE" ]; then
-    eval "$(zoxide init --cmd cd zsh)"
-fi
+# if [ -z "$DISABLE_ZOXIDE" ]; then
+#     eval "$(zoxide init --cmd cd zsh)"
+# fi
+
+[[ $- == *i* ]] && eval "$(zoxide init --cmd cd zsh)"
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
@@ -162,3 +164,7 @@ if [ -f '/Users/andrew/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/User
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/andrew/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/andrew/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Android
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools"
