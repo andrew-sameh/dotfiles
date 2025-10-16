@@ -17,15 +17,19 @@ return {
       { "<leader>vc", "<cmd>VenvSelectCached<cr>" },
     },
   },
-  -- add pyright to lspconfig
+  -- Override pyright root detection to use workspace root
   {
     "neovim/nvim-lspconfig",
     ---@class PluginLspOpts
     opts = {
       ---@type lspconfig.options
       servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
-        pyright = {},
+        pyright = {
+          -- root_dir = function(fname)
+          --   local util = require("lspconfig.util")
+          --   return util.root_pattern("pyrightconfig.json", ".git")(fname)
+          -- end,
+        },
       },
     },
   },
@@ -37,7 +41,6 @@ return {
       ensure_installed = {
         "ruff",
         "pyright",
-        -- "mypy",
         "debugpy",
       },
     },
