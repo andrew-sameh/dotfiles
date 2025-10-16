@@ -1,0 +1,7 @@
+[user]
+    name = Andrew Sameh
+    email = andrew.zameh@gmail.com
+
+[url "git@github.com-shadow:"]
+    insteadOf = https://github.com/
+

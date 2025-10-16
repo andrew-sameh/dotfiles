@@ -5,8 +5,12 @@ tap "jesseduffield/lazygit"
 tap "nikitabobko/tap"
 # General-purpose data compression with high compression ratio
 brew "xz"
+# YAML Parser
+brew "libyaml"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
+# Microsoft Azure CLI 2.0
+brew "azure-cli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
@@ -31,8 +35,6 @@ brew "fzf"
 brew "gh"
 # Distributed revision control system
 brew "git"
-# Library for command-line editing
-brew "readline"
 # Fast linters runner for Go
 brew "golangci-lint"
 # Tools and libraries to manipulate images in many formats
@@ -45,8 +47,6 @@ brew "k6"
 brew "lazygit"
 # Postgres C API library
 brew "libpq"
-# YAML Parser
-brew "libyaml"
 # Clone of ls with colorful output, file type icons, and more
 brew "lsd"
 # Fast, highly customisable system info script
@@ -63,6 +63,8 @@ brew "postgresql@16"
 brew "pyenv"
 # Pyenv plugin to manage virtualenv
 brew "pyenv-virtualenv"
+# Static type checker for Python
+brew "pyright"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
 # Reattach process (e.g., tmux) to background
@@ -123,6 +125,8 @@ cask "bitwarden"
 cask "bluestacks"
 # Terminal-based AI coding assistant
 cask "claude-code"
+# Free app that makes your Internet safer
+cask "cloudflare-warp"
 # Utilities designed to make common development tasks easier
 cask "devtoys"
 # Voice and text chat software
@@ -156,6 +160,8 @@ cask "spotmenu"
 cask "stats"
 # Text editor for code, markup and prose
 cask "sublime-text"
+# JDK from the Eclipse Foundation (Adoptium)
+cask "temurin@21"
 # Open-source BitTorrent client
 cask "transmission"
 # Native desktop client for WhatsApp
@@ -303,3 +309,12 @@ vscode "wholroyd.jinja"
 vscode "wix.vscode-import-cost"
 vscode "xirider.livecode"
 vscode "ysemeniuk.emmet-live"
+go "github.com/air-verse/air"
+go "github.com/go-delve/delve/cmd/dlv"
+go "github.com/pressly/goose/v3/cmd/goose"
+go "golang.org/x/tools/gopls"
+go "github.com/vektra/mockery/v2"
+go "github.com/maaslalani/nap"
+go "github.com/sqlc-dev/sqlc/cmd/sqlc"
+go "honnef.co/go/tools/cmd/staticcheck"
+go "github.com/swaggo/swag/cmd/swag"
