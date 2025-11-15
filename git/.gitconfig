@@ -1,5 +1,5 @@
 [user]
-	name = Andrew Sam
+	name = Andrew Sameh
 	email = g.andrewsameh@gmail.com
 [init]
 	defaultBranch = main
@@ -11,4 +11,8 @@
 	required = true
 
 [includeIf "gitdir:~/Code/pulse/"]
+    path = ~/.gitconfig-shadow
+
+
+[includeIf "gitdir:~/Code/rgvs/"]
     path = ~/.gitconfig-shadow

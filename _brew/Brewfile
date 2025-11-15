@@ -1,5 +1,10 @@
+tap "derailed/k9s"
 tap "hashicorp/tap"
 tap "nikitabobko/tap"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# Microsoft Azure CLI 2.0
+brew "azure-cli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Console Matrix
@@ -12,6 +17,8 @@ brew "dbmate"
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
@@ -20,6 +27,10 @@ brew "gh"
 brew "git"
 # Fast linters runner for Go
 brew "golangci-lint"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Template-free customization of Kubernetes YAML manifests
+brew "kustomize"
 # Simple terminal UI for git commands
 brew "lazygit"
 # Fast, highly customisable system info script
@@ -28,10 +39,12 @@ brew "neofetch"
 brew "neovim"
 # Manage multiple Node.js versions
 brew "nvm"
+# Create, run, and share large language models (LLMs)
+brew "ollama"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
 # Password manager
 brew "pass"
-# General-purpose data compression with high compression ratio
-brew "xz"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Python version management
@@ -40,6 +53,8 @@ brew "pyenv"
 brew "reattach-to-user-namespace"
 # Extremely fast Python linter, written in Rust
 brew "ruff"
+# SOund eXchange: universal sound sample translator
+brew "sox"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
@@ -66,6 +81,8 @@ brew "zsh-history-substring-search"
 brew "zsh-syntax-highlighting"
 # ZSH plugin that reminds you to use existing aliases for commands you just typed
 brew "zsh-you-should-use"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "derailed/k9s/k9s"
 # Terraform
 brew "hashicorp/tap/terraform"
 # AeroSpace is an i3-like tiling window manager for macOS
@@ -82,36 +99,50 @@ cask "brave-browser"
 cask "cap"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
+# OpenAI's official browser with ChatGPT built in
+cask "chatgpt-atlas"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
 cask "claude-code"
+# Free app that makes your Internet safer
+cask "cloudflare-warp"
 # Write, edit, and chat about your code with AI
 cask "cursor"
 # Universal database tool and SQL client
 cask "dbeaver-community"
 # Utilities designed to make common development tasks easier
 cask "devtoys"
+# Voice and text chat software
+cask "discord"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "gcloud-cli"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Desktop client for GitHub repositories
+cask "github"
 # Web browser
 cask "google-chrome"
 # Utility to hide menu bar items
 cask "hiddenbar"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Kubernetes IDE
+cask "lens"
 # Open-source cross-platform alternative to AirDrop
 cask "localsend"
 # Open-source firewall to block unknown outgoing connections
 cask "lulu"
+# Connect to your Android devices
+cask "macdroid"
 # Open-source, self-hosted Slack-alternative
 cask "mattermost"
 # App to write, plan, collaborate, and get organised
 cask "notion"
 # Calculator and converter application
 cask "numi"
+# Get up and running with large language models locally
+cask "ollama-app"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Collaboration platform for API development
@@ -132,6 +163,8 @@ cask "stats"
 cask "stremio"
 # Text editor for code, markup and prose
 cask "sublime-text"
+# JDK from the Eclipse Foundation (Adoptium)
+cask "temurin@21"
 # Open-source BitTorrent client
 cask "transmission"
 # Open-source code editor
@@ -160,6 +193,7 @@ vscode "dart-code.dart-code"
 vscode "dart-code.flutter"
 vscode "davidanson.vscode-markdownlint"
 vscode "dotjoshjohnson.xml"
+vscode "eamodio.gitlens"
 vscode "file-icons.file-icons"
 vscode "formulahendry.auto-rename-tag"
 vscode "foxundermoon.shell-format"
@@ -174,6 +208,7 @@ vscode "irongeek.vscode-env"
 vscode "jannchie.ruff-ignore-explainer"
 vscode "kisstkondoros.vscode-gutter-preview"
 vscode "mrmlnc.vscode-duplicate"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-pyright.pyright"
 vscode "ms-python.debugpy"
 vscode "ms-python.isort"
@@ -201,3 +236,5 @@ vscode "wayou.vscode-todo-highlight"
 vscode "wholroyd.jinja"
 vscode "wix.vscode-import-cost"
 vscode "ysemeniuk.emmet-live"
+go "golang.org/x/tools/gopls"
+go "honnef.co/go/tools/cmd/staticcheck"

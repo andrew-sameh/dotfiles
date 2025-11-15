@@ -8,3 +8,6 @@ window-decoration = true
 mouse-hide-while-typing = true
 keybind = shift+enter=text:\n
 keybind = global:cmd+t=toggle_quick_terminal
+clipboard-write = allow
+clipboard-read  = allow
+copy-on-select  = clipboard

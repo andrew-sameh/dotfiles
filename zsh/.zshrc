@@ -41,6 +41,7 @@ alias gcoall='git checkout -- .'
 alias gcb='git checkout -b'
 alias gr='git remote'
 alias gre='git reset'
+alias guc='git reset --soft HEAD~1'
 
 # Docker
 alias dco="docker compose"
@@ -65,6 +66,14 @@ alias gcpdeact="gcloud auth revoke"
 alias gcpinfo="gcloud info"
 alias gcpdauth="gcloud auth application-default login"
 alias gcpauth="gcloud auth login"
+
+# Azure
+alias azlist="az account list --output table"
+alias azuse="az account set --subscription"
+alias azshow="az account show"
+alias azlogin="az login"
+alias azlogout="az logout"
+alias azacr="az acr login --name"
 
 # Zsh Source
 alias rezsh="source ~/.zshrc"
@@ -166,3 +175,5 @@ if [ -f '/Users/andrewsam/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/U
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/andrewsam/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/andrewsam/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
