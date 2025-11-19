@@ -146,6 +146,8 @@ cask "localsend"
 cask "lulu"
 # Open-source, self-hosted Slack-alternative
 cask "mattermost"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
 # Calculator and converter application
 cask "numi"
 # Open-source software for live streaming and screen recording

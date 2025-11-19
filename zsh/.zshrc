@@ -74,7 +74,8 @@ alias zshconfig="nvim ~/.zshrc"
 # alias cd="z"
 
 # Tmux
-alias retmux="source ~/.tmux.conf"
+# alias retmux="source ~/.tmux.conf"
+alias retmux="tmux source-file ~/.tmux.conf"
 
 # MacO
 alias wifipass="security find-generic-password -wa"
@@ -168,3 +169,5 @@ if [ -f '/Users/andrew/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . 
 # Android
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools"
+
+nvm use default

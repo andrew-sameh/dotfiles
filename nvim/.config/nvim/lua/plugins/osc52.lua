@@ -1,0 +1,45 @@
+-- Use Neovim's native OSC52 clipboard provider (NVIM ≥ 0.10)
+-- Works in SSH (and tmux, if allow-passthrough is enabled).
+return {
+  -- {
+  --   -- Attach to the core spec so this runs early
+  --   "LazyVim/LazyVim",
+  --   priority = 1000,
+  --   config = function()
+  --     -- Always route yanks to the system clipboard
+  --     vim.opt.clipboard = "unnamedplus"
+  --
+  --     -- Prefer the native OSC52 provider if available (NVIM 0.10+)
+  --     local ok, osc52 = pcall(require, "vim.ui.clipboard.osc52")
+  --     if ok and type(osc52.copy) == "function" and type(osc52.paste) == "function" then
+  --       -- Full read/write over OSC52. If your terminal blocks reads,
+  --       -- switch to the copy-only variant below.
+  --       vim.g.clipboard = {
+  --         name = "osc52",
+  --         copy = {
+  --           ["+"] = osc52.copy("+"),
+  --           ["*"] = osc52.copy("*"),
+  --         },
+  --         paste = {
+  --           ["+"] = osc52.paste("+"),
+  --           ["*"] = osc52.paste("*"),
+  --         },
+  --       }
+  --     else
+  --       -- Fallback: tell Neovim to use its built-in osc52 provider directly
+  --       -- (Neovim will resolve it internally).
+  --       vim.g.clipboard = "osc52"
+  --     end
+  --
+  --     -- Optional: auto-copy any yank to clipboard (nice UX)
+  --     vim.api.nvim_create_autocmd("TextYankPost", {
+  --       callback = function()
+  --         if vim.v.event.operator == "y" then
+  --           -- no-op; with clipboard=unnamedplus, the yank already hit system clipboard
+  --           -- keep hook if you want to add notifications/logging
+  --         end
+  --       end,
+  --     })
+  --   end,
+  -- },
+}
