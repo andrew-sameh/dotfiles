@@ -206,7 +206,7 @@ modified = "󰷉${count}"
 staged = "󰄬${count}"
 renamed = "󰑕${count}"
 deleted = "󰮘${count}"
-format = '([$conflicted](bold yellow)[$deleted](bold red)[$renamed](bold blue)[$modified](bold peach)[$staged](bold green)[$untracked](bold sky)[$stashed](bold lavender)[$ahead](bold teal)[$behind](bold maroon)[$diverged](bold pink) )'
+format = '([$conflicted](bold yellow)[$deleted](bold red)[$renamed](bold blue)[$modified](bold peach)[$staged](bold green)[$untracked](bold sky)[$stashed](bold lavender)$ahead_behind )'
 
 [git_metrics]
 added_style = "bold green"
