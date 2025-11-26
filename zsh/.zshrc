@@ -13,6 +13,19 @@ export EDITOR=/opt/homebrew/bin/nvim
 export TERM=xterm-256color
 export XDG_CONFIG_HOME="$HOME/.config"
 export DOTFILES="$HOME/dotfiles"
+
+case "$(scutil --get LocalHostName)" in
+  "Andrews-MacBook-Air")
+    export MACHINE="air"
+    ;;
+  "Andrews-Mac-mini")
+    export MACHINE="mini"
+    ;;
+  *)
+    export MACHINE="unknown"
+    ;;
+esac
+
 ## Aliases
 #alias l='lsd -hA --group-dirs first'
 # Eza
@@ -171,3 +184,6 @@ export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools"
 
 nvm use default
+
+# Added by Antigravity
+export PATH="/Users/andrew/.antigravity/antigravity/bin:$PATH"

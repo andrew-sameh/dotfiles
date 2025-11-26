@@ -11,26 +11,26 @@ vim.opt.incsearch = true
 -- Add the OSC52 bits below.
 
 -- Always route yanks to system clipboard
-vim.opt.clipboard = "unnamedplus"
-
--- Use Neovim's built-in OSC52 provider.
--- IMPORTANT: do NOT `require` it; access via vim.ui.clipboard.osc52.
-local osc = vim.ui and vim.ui.clipboard and vim.ui.clipboard.osc52
-
-if osc and type(osc.copy) == "function" and type(osc.paste) == "function" then
-  -- Full read/write over OSC52 (works if your terminal allows clipboard reads)
-  vim.g.clipboard = {
-    name = "osc52",
-    copy = {
-      ["+"] = osc.copy("+"),
-      ["*"] = osc.copy("*"),
-    },
-    paste = {
-      ["+"] = osc.paste("+"),
-      ["*"] = osc.paste("*"),
-    },
-  }
-else
-  -- Fallback: let Neovim resolve the osc52 provider internally (0.10+)
-  vim.g.clipboard = "osc52"
-end
+-- vim.opt.clipboard = "unnamedplus"
+--
+-- -- Use Neovim's built-in OSC52 provider.
+-- -- IMPORTANT: do NOT `require` it; access via vim.ui.clipboard.osc52.
+-- local osc = vim.ui and vim.ui.clipboard and vim.ui.clipboard.osc52
+--
+-- if osc and type(osc.copy) == "function" and type(osc.paste) == "function" then
+--   -- Full read/write over OSC52 (works if your terminal allows clipboard reads)
+--   vim.g.clipboard = {
+--     name = "osc52",
+--     copy = {
+--       ["+"] = osc.copy("+"),
+--       ["*"] = osc.copy("*"),
+--     },
+--     paste = {
+--       ["+"] = osc.paste("+"),
+--       ["*"] = osc.paste("*"),
+--     },
+--   }
+-- else
+--   -- Fallback: let Neovim resolve the osc52 provider internally (0.10+)
+--   vim.g.clipboard = "osc52"
+-- end
