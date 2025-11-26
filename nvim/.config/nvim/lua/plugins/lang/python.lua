@@ -24,21 +24,32 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
-        pyright = {},
+        pyright = false, -- disable pyright
+        pyrefly = {}, -- enable pyrefly
+        ruff = {}, -- keep ruff for linting/formatting
       },
     },
   },
 
+  -- Format on save
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        python = { "ruff_organize_imports", "ruff_format" },
+      },
+    },
+  },
   -- add any tools you want to have installed below
   {
     "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
         "ruff",
-        "pyright",
+        -- "pyright",
         -- "mypy",
         "debugpy",
+        "pyrefly",
       },
     },
   },

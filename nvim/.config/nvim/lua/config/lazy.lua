@@ -34,7 +34,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.util.octo" },
 
     -- import/override with your plugins
-        { import = "plugins" },
+    { import = "plugins" },
     -- import language configs
     { import = "plugins.lang" },
   },

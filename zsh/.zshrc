@@ -95,7 +95,7 @@ alias ccupgrade='brew upgrade --cask claude-code'
 
 ## Python
 # Created by `pipx` on 2025-01-23 14:13:12
-export PATH="$PATH:/Users/andrewsam/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 export PATH="$(brew --prefix python)/libexec/bin:$PATH"
 #Poetry
 export POETRY_VIRTUALENVS_IN_PROJECT=true
@@ -160,10 +160,10 @@ export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
 eval "$(tmuxifier init -)"
 
 # Added by Windsurf
-export PATH="/Users/andrewsam/.codeium/windsurf/bin:$PATH"
+export PATH="$HOME/.codeium/windsurf/bin:$PATH"
 
 # pnpm
-export PNPM_HOME="/Users/andrewsam/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -171,9 +171,12 @@ esac
 # pnpm end
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/andrewsam/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/andrewsam/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "$HOME/Downloads/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/Downloads/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/andrewsam/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/andrewsam/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc"; fi
 
 source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+
+# Added by Antigravity
+export PATH="$HOME/.antigravity/antigravity/bin:$PATH"

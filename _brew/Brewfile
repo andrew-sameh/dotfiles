@@ -49,6 +49,8 @@ brew "pass"
 brew "pipx"
 # Python version management
 brew "pyenv"
+# Fast type checker and IDE for Python
+brew "pyrefly"
 # Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
 # Extremely fast Python linter, written in Rust
@@ -87,6 +89,8 @@ brew "derailed/k9s/k9s"
 brew "hashicorp/tap/terraform"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "aerospace"
+# AI Coding Agent IDE
+cask "antigravity"
 # Chromium based browser
 cask "arc"
 # Compare files and folders
