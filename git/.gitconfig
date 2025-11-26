@@ -1,5 +1,5 @@
 [user]
-	name = Andrew Sam
+	name = Andrew Sameh
 	email = g.andrewsameh@gmail.com
 [init]
 	defaultBranch = main
@@ -9,3 +9,13 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+[includeIf "gitdir:~/Code/pulse/"]
+    path = ~/.gitconfig-shadow
+
+
+[includeIf "gitdir:~/Code/rgvs/"]
+    path = ~/.gitconfig-shadow
+
+[includeIf "gitdir:~/Coding/pulse/"]
+    path = ~/.gitconfig-shadow

@@ -4,7 +4,7 @@ return {
     opts = {},
   },
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = { ensure_installed = { "gomodifytags", "impl", "gopls", "delve", "goimports", "gofumpt", "golangci-lint" } },
   },
 }
