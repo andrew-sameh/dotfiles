@@ -1,6 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 palette = 'catppuccin_mocha'
+command_timeout = 1000  # Increase timeout to 1000ms (default is 500ms)
 
 format = """
 $shell\

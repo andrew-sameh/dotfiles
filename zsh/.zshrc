@@ -13,6 +13,19 @@ export EDITOR=/opt/homebrew/bin/nvim
 export TERM=xterm-256color
 export XDG_CONFIG_HOME="$HOME/.config"
 export DOTFILES="$HOME/dotfiles"
+
+case "$(scutil --get LocalHostName)" in
+  "Andrews-MacBook-Air")
+    export MACHINE="air"
+    ;;
+  "Andrews-Mac-mini")
+    export MACHINE="mini"
+    ;;
+  *)
+    export MACHINE="unknown"
+    ;;
+esac
+
 ## Aliases
 #alias l='lsd -hA --group-dirs first'
 # Eza
@@ -134,13 +147,16 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
 
 # NVM
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+if [ "$MACHINE" = "mini" ]; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+  [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
 
- export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+elif [ "$MACHINE" = "air" ]; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+fi
 # Color Script
 indexes=(30 39 56 55 51 49 30 29 4 21 11 2)
 random_index=${indexes[RANDOM % ${#indexes[@]}]}
@@ -177,6 +193,12 @@ if [ -f "$HOME/Downloads/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/Downloa
 if [ -f "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc"; fi
 
 source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+
+# Android
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools"
+
+nvm use default
 
 # Added by Antigravity
 export PATH="$HOME/.antigravity/antigravity/bin:$PATH"

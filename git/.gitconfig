@@ -16,3 +16,6 @@
 
 [includeIf "gitdir:~/Code/rgvs/"]
     path = ~/.gitconfig-shadow
+
+[includeIf "gitdir:~/Coding/pulse/"]
+    path = ~/.gitconfig-shadow
