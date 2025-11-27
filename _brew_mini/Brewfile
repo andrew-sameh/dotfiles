@@ -4,6 +4,8 @@ tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "jesseduffield/lazygit"
 tap "nikitabobko/tap"
+# Portable ASCII art graphics library
+brew "aalib"
 # General-purpose data compression with high compression ratio
 brew "xz"
 # YAML Parser
@@ -16,12 +18,20 @@ brew "azure-cli"
 brew "bat"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Console Bonsai is a bonsai tree generator, written in C using ncurses
+brew "cbonsai"
 # Console Matrix
 brew "cmatrix"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # OpenAI's coding agent that runs in your terminal
 brew "codex"
+# Apjanke's fork of the classic cowsay project
+brew "cowsay"
+# Securely send things from one computer to another
+brew "croc"
+# Power of curl, ease of use of httpie
+brew "curlie"
 # Lightweight, framework-agnostic database migration tool
 brew "dbmate"
 # Modern, maintained replacement for ls
@@ -30,6 +40,10 @@ brew "eza"
 brew "fd"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Banner-like program prints strings as ASCII art
+brew "figlet"
+# Infamous electronic fortune-cookie generator
+brew "fortune"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
@@ -38,10 +52,16 @@ brew "gh"
 brew "git"
 # Fast linters runner for Go
 brew "golangci-lint"
+# Command-line tool for generating regular expressions
+brew "grex"
+# ASCII-art displaying typo-corrector for commands
+brew "gti"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Command-line note taker
+brew "jrnl"
 # Modern load testing tool, using Go and JavaScript
 brew "k6"
 # Kubernetes command-line interface
@@ -50,18 +70,24 @@ brew "kubernetes-cli"
 brew "lazygit"
 # Postgres C API library
 brew "libpq", link: true
+# Rainbows and unicorns in your console!
+brew "lolcat"
 # Clone of ls with colorful output, file type icons, and more
 brew "lsd"
 # Fast, highly customisable system info script
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Modern shell for the GitHub era
+brew "nushell"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
 # Object-relational database system
 brew "postgresql@16"
+# Modern API client that lives in your terminal
+brew "posting"
 # Python version management
 brew "pyenv"
 # Pyenv plugin to manage virtualenv
