@@ -28,6 +28,7 @@ esac
 
 ## Aliases
 #alias l='lsd -hA --group-dirs first'
+
 # Random
 alias please='sudo $(fc -ln -1)'
 alias ccat='pygmentize -g'
@@ -118,6 +119,11 @@ alias c="clear"
 alias brewdump='brew bundle dump --force --describe --file=~/Brewfile'
 alias ccupgrade='brew upgrade --cask claude-code'
 
+# Python
+alias aple='source .venv/bin/activate'
+
+# claude-code
+alias lcc="claude"
 
 ############################################
 #   TERMINAL DOPAMINE PACK — FINAL EDITION
@@ -205,7 +211,6 @@ export POETRY_VIRTUALENVS_IN_PROJECT=true
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
-alias aple='source .venv/bin/activate'
 
 ## Go
 export GOPATH=$HOME/go

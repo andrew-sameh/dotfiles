@@ -56,6 +56,8 @@ brew "golangci-lint"
 brew "grex"
 # ASCII-art displaying typo-corrector for commands
 brew "gti"
+# Kubernetes package manager
+brew "helm"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
