@@ -1,0 +1,1188 @@
+{
+  "extensions": {
+    "catppuccin": {
+      "manifest": {
+        "id": "catppuccin",
+        "name": "Catppuccin",
+        "version": "0.2.24",
+        "schema_version": 1,
+        "description": "🦀 Soothing pastel theme for Zed",
+        "repository": "https://github.com/catppuccin/zed",
+        "authors": [
+          "Catppuccin <releases@catppuccin.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [
+          "themes/catppuccin-mauve.json",
+          "themes/catppuccin-no-italics-mauve.json"
+        ],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "catppuccin-icons": {
+      "manifest": {
+        "id": "catppuccin-icons",
+        "name": "Catppuccin Icons",
+        "version": "1.23.1",
+        "schema_version": 1,
+        "description": "🦊 Soothing pastel icons for Zed",
+        "repository": "https://github.com/catppuccin/zed-icons",
+        "authors": [
+          "Catppuccin <releases@catppuccin.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [
+          "icon_themes/catppuccin-icons.json"
+        ],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "colored-zed-icons-theme": {
+      "manifest": {
+        "id": "colored-zed-icons-theme",
+        "name": "Colored Zed Icons Theme",
+        "version": "0.3.1",
+        "schema_version": 1,
+        "description": "Default Zed icons, but colored!",
+        "repository": "https://github.com/TheRedXD/zed-icons-colored-theme",
+        "authors": [
+          "TheRedXD",
+          "Zed Industries <support@zed.dev>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [
+          "icon_themes/colored-zed-icons-theme.json"
+        ],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "docker-compose": {
+      "manifest": {
+        "id": "docker-compose",
+        "name": "Docker Compose",
+        "version": "0.1.0",
+        "schema_version": 1,
+        "description": "Syntax highlighting for Docker Compose files",
+        "repository": "https://github.com/eth0net/zed-docker-compose",
+        "authors": [
+          "eth0net <eth0net@pm.me>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.0.6"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {
+          "docker-compose": {
+            "language": "YAML",
+            "languages": [],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "dockerfile": {
+      "manifest": {
+        "id": "dockerfile",
+        "name": "Dockerfile",
+        "version": "0.1.0",
+        "schema_version": 1,
+        "description": "Dockerfile support.",
+        "repository": "https://github.com/zed-extensions/dockerfile",
+        "authors": [
+          "d1y <chenhonzho@gmail.com>",
+          "joshmeads <github@joshmeads.com>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.7.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/dockerfile"
+        ],
+        "grammars": {
+          "dockerfile": {
+            "repository": "https://github.com/camdencheek/tree-sitter-dockerfile",
+            "rev": "868e44ce378deb68aac902a9db68ff82d2299dd0",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "dockerfile-language-server": {
+            "language": "Dockerfile",
+            "languages": [],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": [],
+        "debug_adapters": {
+          "buildx-dockerfile": {
+            "schema_path": "./debug_adapter_schemas/buildx-dockerfile.json"
+          }
+        }
+      },
+      "dev": false
+    },
+    "dracula": {
+      "manifest": {
+        "id": "dracula",
+        "name": "Dracula",
+        "version": "1.1.1",
+        "schema_version": 1,
+        "description": "Official Dracula theme for Zed",
+        "repository": "https://github.com/dracula/zed",
+        "authors": [
+          "Ben Hamment <fisix1@gmail.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [
+          "themes/dracula.json"
+        ],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "env": {
+      "manifest": {
+        "id": "env",
+        "name": "env",
+        "version": "0.0.1",
+        "schema_version": 1,
+        "description": "🔐 Environment support. ✰ and report issues ➩",
+        "repository": "https://github.com/zarifpour/zed-env",
+        "authors": [
+          "Daniel Zarifpour <z@rifpour.xyz>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/env"
+        ],
+        "grammars": {
+          "env": {
+            "repository": "https://github.com/zarifpour/tree-sitter-dotenv",
+            "rev": "a854096808a5c1da0de998b31e5887995a98a89f",
+            "path": null
+          }
+        },
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "git-firefly": {
+      "manifest": {
+        "id": "git-firefly",
+        "name": "Git Firefly",
+        "version": "0.1.2",
+        "schema_version": 1,
+        "description": "Provides Git Syntax Highlighting",
+        "repository": "https://github.com/d1y/git_firefly",
+        "authors": [
+          "d1y <chenhonzhou@gmail.com>",
+          "Peter Tripp <petertripp@gmail.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/gitattributes",
+          "languages/gitignore",
+          "languages/gitconfig",
+          "languages/gitrebase",
+          "languages/gitcommit"
+        ],
+        "grammars": {
+          "git_commit": {
+            "repository": "https://github.com/the-mikedavis/tree-sitter-git-commit",
+            "rev": "6f193a66e9aa872760823dff020960c6cedc37b3",
+            "path": null
+          },
+          "git_config": {
+            "repository": "https://github.com/the-mikedavis/tree-sitter-git-config",
+            "rev": "9c2a1b7894e6d9eedfe99805b829b4ecd871375e",
+            "path": null
+          },
+          "git_rebase": {
+            "repository": "https://github.com/the-mikedavis/tree-sitter-git-rebase",
+            "rev": "d8a4207ebbc47bd78bacdf48f883db58283f9fd8",
+            "path": null
+          },
+          "gitattributes": {
+            "repository": "https://github.com/tree-sitter-grammars/tree-sitter-gitattributes",
+            "rev": "41940e199ba5763abea1d21b4f717014b45f01ea",
+            "path": null
+          },
+          "gitignore": {
+            "repository": "https://github.com/shunsambongi/tree-sitter-gitignore",
+            "rev": "f4685bf11ac466dd278449bcfe5fd014e94aa504",
+            "path": null
+          }
+        },
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "gosum": {
+      "manifest": {
+        "id": "gosum",
+        "name": "Go Sum Highlighting",
+        "version": "0.0.2",
+        "schema_version": 1,
+        "description": "Syntax highlighting for Go Checksum files.",
+        "repository": "https://github.com/kartikvashistha/zed-gosum",
+        "authors": [
+          "Kartik Vashistha <kartikv.work@gmail.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/gosum"
+        ],
+        "grammars": {
+          "gosum": {
+            "repository": "https://github.com/tree-sitter-grammars/tree-sitter-go-sum",
+            "rev": "e2ac513b2240c7ff1069ae33b2df29ce90777c11",
+            "path": null
+          }
+        },
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "helm": {
+      "manifest": {
+        "id": "helm",
+        "name": "Helm",
+        "version": "0.0.2",
+        "schema_version": 1,
+        "description": "Syntax highlighting for Helm templates",
+        "repository": "https://github.com/cabrinha/helm.zed",
+        "authors": [
+          "cabrinha <yuppie@hey.com>",
+          "MrJosh <hi@mrjosh.me>",
+          "Hemant Joshi <mail@hjoshi.me>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.5.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/helm"
+        ],
+        "grammars": {
+          "helm": {
+            "repository": "https://github.com/ngalaiko/tree-sitter-go-template",
+            "rev": "9d3f6e526dd074b9edae9070b7bb778f00e87a5b",
+            "path": "dialects/helm"
+          }
+        },
+        "language_servers": {
+          "helm": {
+            "language": "Helm",
+            "languages": [],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "html": {
+      "manifest": {
+        "id": "html",
+        "name": "HTML",
+        "version": "0.2.3",
+        "schema_version": 1,
+        "description": "HTML support.",
+        "repository": "https://github.com/zed-industries/zed",
+        "authors": [
+          "Isaac Clayton <slightknack@gmail.com>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.7.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/html"
+        ],
+        "grammars": {
+          "html": {
+            "repository": "https://github.com/tree-sitter/tree-sitter-html",
+            "rev": "bfa075d83c6b97cd48440b3829ab8d24a2319809",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "vscode-html-language-server": {
+            "language": "HTML",
+            "languages": [],
+            "language_ids": {
+              "CSS": "css",
+              "HTML": "html"
+            },
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "jetbrains-new-ui-icons": {
+      "manifest": {
+        "id": "jetbrains-new-ui-icons",
+        "name": "JetBrains New UI Icon Theme",
+        "version": "2.2.1",
+        "schema_version": 1,
+        "description": "JetBrains New UI icons theme for Zed",
+        "repository": "https://github.com/ankddev/zed-jetbrains-newui-icons",
+        "authors": [
+          "ANKDDEV"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [
+          "icon_themes/jetbrains-new-ui-icons-theme.json"
+        ],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "lua": {
+      "manifest": {
+        "id": "lua",
+        "name": "Lua",
+        "version": "0.1.7",
+        "schema_version": 1,
+        "description": "Lua support.",
+        "repository": "https://github.com/zed-extensions/lua",
+        "authors": [
+          "Max Brunsfeld <max@zed.dev>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.7.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/lua",
+          "languages/emmyluadoc"
+        ],
+        "grammars": {
+          "emmyluadoc": {
+            "repository": "https://github.com/EmmyLuaLs/tree-sitter-emmyluadoc",
+            "rev": "ea755c0fd34c07e16597bd62a404d6eba2a3891e",
+            "path": null
+          },
+          "lua": {
+            "repository": "https://github.com/tree-sitter-grammars/tree-sitter-lua",
+            "rev": "d76023017f7485eae629cb60d406c7a1ca0f40c9",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "lua-language-server": {
+            "language": null,
+            "languages": [
+              "Lua",
+              "EmmyLuadoc"
+            ],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "make": {
+      "manifest": {
+        "id": "make",
+        "name": "Make",
+        "version": "1.1.1",
+        "schema_version": 1,
+        "description": "Makefile syntax highlighting",
+        "repository": "https://github.com/caius/zed-make",
+        "authors": [
+          "Caius Durling <dev@caius.name>",
+          "d1y <chenhonzhou@gmail.com>",
+          "Marshall Bowers <elliott.codes@gmail.com>",
+          "Luke Naylor <luke@grahamnaylor.net>",
+          "Igor Támara <igor.tamara@gmail.com>",
+          "Michael Alexander <michael.alexander@karlstorz.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/make"
+        ],
+        "grammars": {
+          "make": {
+            "repository": "https://github.com/tree-sitter-grammars/tree-sitter-make",
+            "rev": "5e9e8f8ff3387b0edcaa90f46ddf3629f4cfeb1d",
+            "path": null
+          }
+        },
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "material-icon-theme": {
+      "manifest": {
+        "id": "material-icon-theme",
+        "name": "Material Icon Theme",
+        "version": "1.3.0",
+        "schema_version": 1,
+        "description": "Material Design icons.",
+        "repository": "https://github.com/zed-extensions/material-icon-theme",
+        "authors": [
+          "Zed Industries <support@zed.dev>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [
+          "icon_themes/material-icon-theme.json"
+        ],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "prisma": {
+      "manifest": {
+        "id": "prisma",
+        "name": "Prisma",
+        "version": "0.1.6",
+        "schema_version": 1,
+        "description": "Prisma support.",
+        "repository": "https://github.com/zed-extensions/prisma",
+        "authors": [
+          "Matthew Gramigna <matthewgramigna@gmail.com>",
+          "Victor Quiroz <git@victorhqc.com>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.7.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/prisma"
+        ],
+        "grammars": {
+          "prisma": {
+            "repository": "https://github.com/victorhqc/tree-sitter-prisma",
+            "rev": "3556b2c1f20ec9ac91e92d32c43d9d2a0ca3cc49",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "prisma-language-server": {
+            "language": "Prisma",
+            "languages": [],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "pyrefly": {
+      "manifest": {
+        "id": "pyrefly",
+        "name": "Pyrefly",
+        "version": "0.0.1",
+        "schema_version": 1,
+        "description": "Support for the Pyrefly static type checker for Python in Zed",
+        "repository": "https://github.com/zed-extensions/pyrefly",
+        "authors": [
+          "Ben Kunkle <ben@zed.dev>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.5.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {
+          "pyrefly": {
+            "language": null,
+            "languages": [
+              "Python"
+            ],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "sql": {
+      "manifest": {
+        "id": "sql",
+        "name": "SQL",
+        "version": "1.1.4",
+        "schema_version": 1,
+        "description": "SQL language support.",
+        "repository": "https://github.com/zed-extensions/sql",
+        "authors": [
+          "nervenes",
+          "notpeter",
+          "phileix",
+          "tammyxiong"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/sql"
+        ],
+        "grammars": {
+          "sql": {
+            "repository": "https://github.com/DerekStride/tree-sitter-sql",
+            "rev": "4a99c73f5384f2be10adc55208c84d95a7eb1137",
+            "path": null
+          }
+        },
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "terraform": {
+      "manifest": {
+        "id": "terraform",
+        "name": "Terraform",
+        "version": "0.1.5",
+        "schema_version": 1,
+        "description": "Terraform support.",
+        "repository": "https://github.com/zed-extensions/terraform",
+        "authors": [
+          "Caius Durling <dev@caius.name>",
+          "Daniel Banck <dbanck@users.noreply.github.com>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.1.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/terraform-vars",
+          "languages/terraform",
+          "languages/hcl"
+        ],
+        "grammars": {
+          "hcl": {
+            "repository": "https://github.com/MichaHoffmann/tree-sitter-hcl",
+            "rev": "e936d3fef8bac884661472dce71ad82284761eb1",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "terraform-ls": {
+            "language": null,
+            "languages": [
+              "Terraform",
+              "Terraform Vars"
+            ],
+            "language_ids": {
+              "Terraform Vars": "terraform-vars",
+              "Terraform": "terraform"
+            },
+            "code_action_kinds": []
+          }
+        },
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "tokyo-night": {
+      "manifest": {
+        "id": "tokyo-night",
+        "name": "Tokyo Night Themes",
+        "version": "0.7.0",
+        "schema_version": 1,
+        "description": "Tokyo Night Themes",
+        "repository": "https://github.com/ssaunderss/zed-tokyo-night",
+        "authors": [
+          "ssaunderss <austinsaunders@me.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [
+          "themes/tokyo-night.json"
+        ],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "toml": {
+      "manifest": {
+        "id": "toml",
+        "name": "TOML",
+        "version": "1.0.0",
+        "schema_version": 1,
+        "description": "TOML support.",
+        "repository": "https://github.com/zed-extensions/toml",
+        "authors": [
+          "Max Brunsfeld <max@zed.dev>",
+          "Ammar Arif <evergreenkary@gmail.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/toml"
+        ],
+        "grammars": {
+          "toml": {
+            "repository": "https://github.com/tree-sitter/tree-sitter-toml",
+            "rev": "342d9be207c2dba869b9967124c679b5e6fd0ebe",
+            "path": null
+          }
+        },
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    }
+  },
+  "themes": {
+    "Catppuccin Frappé": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin-mauve.json"
+    },
+    "Catppuccin Frappé - No Italics": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin-no-italics-mauve.json"
+    },
+    "Catppuccin Latte": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin-mauve.json"
+    },
+    "Catppuccin Latte - No Italics": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin-no-italics-mauve.json"
+    },
+    "Catppuccin Macchiato": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin-mauve.json"
+    },
+    "Catppuccin Macchiato - No Italics": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin-no-italics-mauve.json"
+    },
+    "Catppuccin Mocha": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin-mauve.json"
+    },
+    "Catppuccin Mocha - No Italics": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin-no-italics-mauve.json"
+    },
+    "Dracula": {
+      "extension": "dracula",
+      "path": "themes/dracula.json"
+    },
+    "Dracula Light (Alucard)": {
+      "extension": "dracula",
+      "path": "themes/dracula.json"
+    },
+    "Dracula Solid": {
+      "extension": "dracula",
+      "path": "themes/dracula.json"
+    },
+    "Tokyo Night": {
+      "extension": "tokyo-night",
+      "path": "themes/tokyo-night.json"
+    },
+    "Tokyo Night Light": {
+      "extension": "tokyo-night",
+      "path": "themes/tokyo-night.json"
+    },
+    "Tokyo Night Moon": {
+      "extension": "tokyo-night",
+      "path": "themes/tokyo-night.json"
+    },
+    "Tokyo Night Storm": {
+      "extension": "tokyo-night",
+      "path": "themes/tokyo-night.json"
+    }
+  },
+  "icon_themes": {
+    "Catppuccin Frappé": {
+      "extension": "catppuccin-icons",
+      "path": "icon_themes/catppuccin-icons.json"
+    },
+    "Catppuccin Latte": {
+      "extension": "catppuccin-icons",
+      "path": "icon_themes/catppuccin-icons.json"
+    },
+    "Catppuccin Macchiato": {
+      "extension": "catppuccin-icons",
+      "path": "icon_themes/catppuccin-icons.json"
+    },
+    "Catppuccin Mocha": {
+      "extension": "catppuccin-icons",
+      "path": "icon_themes/catppuccin-icons.json"
+    },
+    "Colored Zed Icons Theme Dark": {
+      "extension": "colored-zed-icons-theme",
+      "path": "icon_themes/colored-zed-icons-theme.json"
+    },
+    "Colored Zed Icons Theme Light": {
+      "extension": "colored-zed-icons-theme",
+      "path": "icon_themes/colored-zed-icons-theme.json"
+    },
+    "JetBrains New UI Icons (Dark)": {
+      "extension": "jetbrains-new-ui-icons",
+      "path": "icon_themes/jetbrains-new-ui-icons-theme.json"
+    },
+    "JetBrains New UI Icons (Light)": {
+      "extension": "jetbrains-new-ui-icons",
+      "path": "icon_themes/jetbrains-new-ui-icons-theme.json"
+    },
+    "Material Icon Theme": {
+      "extension": "material-icon-theme",
+      "path": "icon_themes/material-icon-theme.json"
+    }
+  },
+  "languages": {
+    "Dockerfile": {
+      "extension": "dockerfile",
+      "path": "languages/dockerfile",
+      "matcher": {
+        "path_suffixes": [
+          "Dockerfile",
+          "Containerfile",
+          "dockerfile"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "dockerfile"
+    },
+    "EmmyLuadoc": {
+      "extension": "lua",
+      "path": "languages/emmyluadoc",
+      "matcher": {
+        "path_suffixes": [],
+        "first_line_pattern": null
+      },
+      "hidden": true,
+      "grammar": "emmyluadoc"
+    },
+    "Git Attributes": {
+      "extension": "git-firefly",
+      "path": "languages/gitattributes",
+      "matcher": {
+        "path_suffixes": [
+          "gitattributes",
+          ".gitattributes"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "gitattributes"
+    },
+    "Git Commit": {
+      "extension": "git-firefly",
+      "path": "languages/gitcommit",
+      "matcher": {
+        "path_suffixes": [
+          "COMMIT_EDITMSG",
+          "EDIT_DESCRIPTION",
+          "MERGE_MSG",
+          "NOTES_EDITMSG",
+          "TAG_EDITMSG"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "git_commit"
+    },
+    "Git Config": {
+      "extension": "git-firefly",
+      "path": "languages/gitconfig",
+      "matcher": {
+        "path_suffixes": [
+          "config.worktree",
+          ".gitconfig",
+          ".gitmodules",
+          ".lfsconfig"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "git_config"
+    },
+    "Git Ignore": {
+      "extension": "git-firefly",
+      "path": "languages/gitignore",
+      "matcher": {
+        "path_suffixes": [
+          ".containerignore",
+          ".cursorignore",
+          ".dockerignore",
+          ".eslintignore",
+          ".fdignore",
+          ".gitignore",
+          ".git-blame-ignore-revs",
+          ".ignore",
+          ".npmignore",
+          ".prettierignore",
+          ".rgignore",
+          ".vscodeignore"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "gitignore"
+    },
+    "Git Rebase": {
+      "extension": "git-firefly",
+      "path": "languages/gitrebase",
+      "matcher": {
+        "path_suffixes": [
+          "git-rebase-todo"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "git_rebase"
+    },
+    "Go Sum": {
+      "extension": "gosum",
+      "path": "languages/gosum",
+      "matcher": {
+        "path_suffixes": [
+          "go.sum"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "gosum"
+    },
+    "HCL": {
+      "extension": "terraform",
+      "path": "languages/hcl",
+      "matcher": {
+        "path_suffixes": [
+          "hcl"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "hcl"
+    },
+    "HTML": {
+      "extension": "html",
+      "path": "languages/html",
+      "matcher": {
+        "path_suffixes": [
+          "html",
+          "htm",
+          "shtml"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "html"
+    },
+    "Helm": {
+      "extension": "helm",
+      "path": "languages/helm",
+      "matcher": {
+        "path_suffixes": [],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "helm"
+    },
+    "Lua": {
+      "extension": "lua",
+      "path": "languages/lua",
+      "matcher": {
+        "path_suffixes": [
+          "lua"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "lua"
+    },
+    "Make": {
+      "extension": "make",
+      "path": "languages/make",
+      "matcher": {
+        "path_suffixes": [
+          "makefile",
+          "Makefile",
+          "GNUmakefile",
+          "OCamlMakefile",
+          "mk",
+          "mak"
+        ],
+        "first_line_pattern": "^#!.*\\b(?:make -f)\\b"
+      },
+      "hidden": false,
+      "grammar": "make"
+    },
+    "Prisma": {
+      "extension": "prisma",
+      "path": "languages/prisma",
+      "matcher": {
+        "path_suffixes": [
+          "prisma"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "prisma"
+    },
+    "SQL": {
+      "extension": "sql",
+      "path": "languages/sql",
+      "matcher": {
+        "path_suffixes": [
+          "sql"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "sql"
+    },
+    "TOML": {
+      "extension": "toml",
+      "path": "languages/toml",
+      "matcher": {
+        "path_suffixes": [
+          "Cargo.lock",
+          "toml",
+          "Pipfile",
+          "uv.lock"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "toml"
+    },
+    "Terraform": {
+      "extension": "terraform",
+      "path": "languages/terraform",
+      "matcher": {
+        "path_suffixes": [
+          "tf",
+          "tofu"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "hcl"
+    },
+    "Terraform Vars": {
+      "extension": "terraform",
+      "path": "languages/terraform-vars",
+      "matcher": {
+        "path_suffixes": [
+          "tfvars"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "hcl"
+    },
+    "env": {
+      "extension": "env",
+      "path": "languages/env",
+      "matcher": {
+        "path_suffixes": [
+          "conf",
+          "env",
+          "envrc",
+          "example",
+          "local"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "env"
+    }
+  }
+}

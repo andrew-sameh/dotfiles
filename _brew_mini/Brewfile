@@ -50,6 +50,8 @@ brew "fzf"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Fast linters runner for Go
 brew "golangci-lint"
 # Command-line tool for generating regular expressions
@@ -94,6 +96,8 @@ brew "posting"
 brew "pyenv"
 # Pyenv plugin to manage virtualenv
 brew "pyenv-virtualenv"
+# Fast type checker and IDE for Python
+brew "pyrefly"
 # Static type checker for Python
 brew "pyright"
 # Interpreted, interactive, object-oriented programming language
@@ -211,6 +215,8 @@ cask "transmission"
 cask "whatsapp"
 # Agentic IDE powered by AI Flow paradigm
 cask "windsurf"
+# Multiplayer code editor
+cask "zed"
 vscode "aaron-bond.better-comments"
 vscode "adam-watters.vscode-color-pick"
 vscode "adpyke.codesnap"

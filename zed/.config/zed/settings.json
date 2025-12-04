@@ -7,15 +7,35 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "assistant": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-3-5-sonnet"
-    },
-    "version": "2"
+  "agent_buffer_font_size": 13.0,
+  "agent_ui_font_size": 13.0,
+  "git_panel": {
+    "collapse_untracked_diff": false,
+    "sort_by_path": true
   },
-  "ui_font_size": 14,
-  "buffer_font_size": 14,
+  "auto_update_extensions": {},
+  "auto_install_extensions": {},
+  "extend_comment_on_newline": false,
+  "project_panel": {
+    "hide_hidden": false,
+    "file_icons": true,
+    "entry_spacing": "standard",
+    "default_width": 240.0
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
+  "title_bar": {
+    "show_branch_icon": true
+  },
+  "ui_font_family": ".ZedSans",
+  "ui_font_weight": 400.0,
+  "edit_predictions": {
+    "disabled_globs": []
+  },
+  "ui_font_size": 15.0,
+  "buffer_font_size": 13.0,
 
   "buffer_font_family": "Hack Nerd Font",
   "terminal": {
@@ -28,13 +48,22 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Mocha",
-    "opacity": 0.7
+    "dark": "Catppuccin Mocha (Blur)"
+  },
+
+  "restore_on_startup": "last_session",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Macchiato",
+    "dark": "Catppuccin Mocha"
   },
   "vim_mode": true,
   "vim": {
     "use_system_clipboard": "always",
     "toggle_relative_line_numbers": true
+  },
+  "minimap": {
+    "show": "auto"
   },
   "lsp": {
     "tailwindcss-language-server": {
@@ -55,9 +84,12 @@
       }
     },
     "Python": {
-      "format_on_save": { "language_server": { "name": "ruff" } },
+      "format_on_save": "on",
+      "code_actions_on_format": {
+        "source.organizeImports.ruff": true
+      },
       "formatter": { "language_server": { "name": "ruff" } },
-      "language_servers": ["pyright", "ruff"]
+      "language_servers": ["pyrefly", "ruff"]
     }
   },
   // File syntax highlighting

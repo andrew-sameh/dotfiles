@@ -9,6 +9,7 @@
   {
     "context": "Workspace",
     "bindings": {
+      // "space r": "projects::OpenRecent"
       // "shift shift": "file_finder::Toggle"
     }
   },
@@ -24,5 +25,117 @@
       "j j": "vim::NormalBefore", // remap jj in insert mode to escape
       "j k": "vim::NormalBefore" // remap jk in insert mode to escape
     }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
+    "bindings": {
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "ctrl-w z": "workspace::ToggleZoom",
+      "shift-l": "pane::ActivateNextItem",
+      "shift-h": "pane::ActivatePreviousItem",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-w t": "terminal_panel::ToggleFocus",
+      "g ]": "editor::GoToDiagnostic",
+      "g r": "editor::FindAllReferences",
+      "shift-k": "editor::Hover",
+      "space c a": "editor::ToggleCodeActions",
+      "space l r": "editor::Rename",
+      "space c f": "editor::Format",
+      "space x x": "diagnostics::Deploy",
+      "space w v": "pane::SplitVertical",
+      "space w h": "pane::SplitHorizontal",
+      "g c c": "editor::ToggleComments",
+      "space space": "file_finder::Toggle",
+      "space /": "workspace::NewSearch",
+      "space o": "tab_switcher::Toggle",
+      "space E": "workspace::ToggleLeftDock",
+      "space e": "pane::RevealInProjectPanel",
+      "space p": "outline::Toggle",
+      "space v": "editor::GoToDefinitionSplit",
+      "space b d": "pane::CloseActiveItem",
+      "space b q": "pane::CloseOtherItems",
+      "space b c": "pane::CloseCleanItems",
+      "space g g": "git_panel::ToggleFocus",
+      "space a a": "workspace::ToggleRightDock",
+      "space r": "projects::OpenRecent",
+      "ctrl-=": ["workspace::IncreaseOpenDocksSize", { "px": 0 }],
+      "ctrl--": ["workspace::DecreaseOpenDocksSize", { "px": 0 }]
+    }
+  },
+  {
+    "context": "(ProjectPanel && not_editing) || (GitPanel && ChangesList)",
+    "bindings": {
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "space r": "projects::OpenRecent",
+      "space g g": "git_panel::ToggleFocus",
+      "space e": "project_panel::ToggleFocus"
+    }
   }
+  // {
+  //   "context": "Editor",
+  //   "bindings": {
+  //     "cmd-[": "editor::Outdent",
+  //     "cmd-]": "editor::Indent",
+  //     "cmd-alt-up": "editor::AddSelectionAbove",
+  //     "cmd-ctrl-p": "editor::AddSelectionAbove",
+  //     "cmd-alt-down": "editor::AddSelectionBelow",
+  //     "cmd-ctrl-n": "editor::AddSelectionBelow",
+  //     "cmd-d": [
+  //       "editor::SelectNext",
+  //       {
+  //         "replace_newest": false
+  //       }
+  //     ],
+  //     "ctrl-cmd-d": [
+  //       "editor::SelectPrevious",
+  //       {
+  //         "replace_newest": false
+  //       }
+  //     ],
+  //     "cmd-k cmd-d": [
+  //       "editor::SelectNext",
+  //       {
+  //         "replace_newest": true
+  //       }
+  //     ],
+  //     "cmd-k ctrl-cmd-d": [
+  //       "editor::SelectPrevious",
+  //       {
+  //         "replace_newest": true
+  //       }
+  //     ],
+  //     "cmd-/": [
+  //       "editor::ToggleComments",
+  //       {
+  //         "advance_downwards": false
+  //       }
+  //     ],
+  //     "alt-up": "editor::SelectLargerSyntaxNode",
+  //     "alt-down": "editor::SelectSmallerSyntaxNode",
+  //     "cmd-u": "editor::UndoSelection",
+  //     "cmd-shift-u": "editor::RedoSelection",
+  //     "f8": "editor::GoToDiagnostic",
+  //     "shift-f8": "editor::GoToPrevDiagnostic",
+  //     "f2": "editor::Rename",
+  //     "f12": "editor::GoToDefinition",
+  //     "alt-f12": "editor::GoToDefinitionSplit",
+  //     "cmd-f12": "editor::GoToTypeDefinition",
+  //     "alt-cmd-f12": "editor::GoToTypeDefinitionSplit",
+  //     "alt-shift-f12": "editor::FindAllReferences",
+  //     "ctrl-m": "editor::MoveToEnclosingBracket",
+  //     "alt-cmd-[": "editor::Fold",
+  //     "alt-cmd-]": "editor::UnfoldLines",
+  //     "ctrl-space": "editor::ShowCompletions",
+  //     "cmd-.": "editor::ToggleCodeActions",
+  //     "alt-cmd-r": "editor::RevealInFinder"
+  //   }
+  // }
 ]
