@@ -214,7 +214,9 @@ eval "$(pyenv init - zsh)"
 
 ## Go
 export GOPATH=$HOME/go
-export GOROOT=/usr/local/go
+# Manual Installation
+#export GOROOT=/usr/local/go
+export GOROOT="$(brew --prefix golang)/libexec"
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # Zsh Plugins
