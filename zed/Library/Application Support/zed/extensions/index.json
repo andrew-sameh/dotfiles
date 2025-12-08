@@ -31,6 +31,36 @@
       },
       "dev": false
     },
+    "catppuccin-blur": {
+      "manifest": {
+        "id": "catppuccin-blur",
+        "name": "Catppuccin Blur",
+        "version": "0.3.3",
+        "schema_version": 1,
+        "description": "Catppuccin themes with blur",
+        "repository": "https://github.com/jenslys/zed-catppuccin-blur",
+        "authors": [
+          "Jens Lystad <jens@lystad.io>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [
+          "themes/catppuccin-blur.json"
+        ],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
     "catppuccin-icons": {
       "manifest": {
         "id": "catppuccin-icons",
@@ -460,6 +490,44 @@
       },
       "dev": false
     },
+    "log": {
+      "manifest": {
+        "id": "log",
+        "name": "LOG",
+        "version": "0.0.6",
+        "schema_version": 1,
+        "description": "Syntax highlighting for log files.",
+        "repository": "https://github.com/nervenes/zed-log",
+        "authors": [
+          "nervenes",
+          "notpeter",
+          "d1y"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/log"
+        ],
+        "grammars": {
+          "log": {
+            "repository": "https://github.com/Tudyx/tree-sitter-log",
+            "rev": "62cfe307e942af3417171243b599cc7deac5eab9",
+            "path": null
+          }
+        },
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
     "lua": {
       "manifest": {
         "id": "lua",
@@ -821,20 +889,104 @@
         "capabilities": []
       },
       "dev": false
+    },
+    "xml": {
+      "manifest": {
+        "id": "xml",
+        "name": "XML",
+        "version": "0.0.9",
+        "schema_version": 1,
+        "description": "XML syntax support.",
+        "repository": "https://github.com/sweetppro/zed-xml",
+        "authors": [
+          "sweetppro"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/xml"
+        ],
+        "grammars": {
+          "xml": {
+            "repository": "https://github.com/tree-sitter-grammars/tree-sitter-xml",
+            "rev": "863dbc381f44f6c136a399e684383b977bb2beaa",
+            "path": "xml"
+          }
+        },
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
     }
   },
   "themes": {
+    "Catppuccin Espresso (Blur)": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
+    },
+    "Catppuccin Espresso (Blur) [Heavy]": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
+    },
+    "Catppuccin Espresso (Blur) [Light]": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
+    },
     "Catppuccin Frappé": {
       "extension": "catppuccin",
       "path": "themes/catppuccin-mauve.json"
+    },
+    "Catppuccin Frappé (Blur)": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
+    },
+    "Catppuccin Frappé (Blur) [Heavy]": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
+    },
+    "Catppuccin Frappé (Blur) [Light]": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
     },
     "Catppuccin Frappé - No Italics": {
       "extension": "catppuccin",
       "path": "themes/catppuccin-no-italics-mauve.json"
     },
+    "Catppuccin Iced Latte (Blur)": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
+    },
+    "Catppuccin Iced Latte (Blur) [Heavy]": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
+    },
+    "Catppuccin Iced Latte (Blur) [Light]": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
+    },
     "Catppuccin Latte": {
       "extension": "catppuccin",
       "path": "themes/catppuccin-mauve.json"
+    },
+    "Catppuccin Latte (Blur)": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
+    },
+    "Catppuccin Latte (Blur) [Heavy]": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
+    },
+    "Catppuccin Latte (Blur) [Light]": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
     },
     "Catppuccin Latte - No Italics": {
       "extension": "catppuccin",
@@ -844,6 +996,18 @@
       "extension": "catppuccin",
       "path": "themes/catppuccin-mauve.json"
     },
+    "Catppuccin Macchiato (Blur)": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
+    },
+    "Catppuccin Macchiato (Blur) [Heavy]": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
+    },
+    "Catppuccin Macchiato (Blur) [Light]": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
+    },
     "Catppuccin Macchiato - No Italics": {
       "extension": "catppuccin",
       "path": "themes/catppuccin-no-italics-mauve.json"
@@ -851,6 +1015,18 @@
     "Catppuccin Mocha": {
       "extension": "catppuccin",
       "path": "themes/catppuccin-mauve.json"
+    },
+    "Catppuccin Mocha (Blur)": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
+    },
+    "Catppuccin Mocha (Blur) [Heavy]": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
+    },
+    "Catppuccin Mocha (Blur) [Light]": {
+      "extension": "catppuccin-blur",
+      "path": "themes/catppuccin-blur.json"
     },
     "Catppuccin Mocha - No Italics": {
       "extension": "catppuccin",
@@ -1075,6 +1251,18 @@
       "hidden": false,
       "grammar": "helm"
     },
+    "LOG": {
+      "extension": "log",
+      "path": "languages/log",
+      "matcher": {
+        "path_suffixes": [
+          "log"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "log"
+    },
     "Lua": {
       "extension": "lua",
       "path": "languages/lua",
@@ -1167,6 +1355,18 @@
       },
       "hidden": false,
       "grammar": "hcl"
+    },
+    "XML": {
+      "extension": "xml",
+      "path": "languages/xml",
+      "matcher": {
+        "path_suffixes": [
+          "xml"
+        ],
+        "first_line_pattern": "^<.*xml"
+      },
+      "hidden": false,
+      "grammar": "xml"
     },
     "env": {
       "extension": "env",

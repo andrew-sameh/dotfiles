@@ -38,6 +38,7 @@ ms-azuretools.vscode-containers
 ms-pyright.pyright
 ms-python.debugpy
 ms-python.python
+ms-python.vscode-python-envs
 ms-toolsai.jupyter
 ms-toolsai.jupyter-keymap
 ms-toolsai.jupyter-renderers
