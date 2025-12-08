@@ -105,9 +105,6 @@ alias azacr="az acr login --name"
 alias rezsh="source ~/.zshrc"
 alias zshconfig="nvim ~/.zshrc"
 
-# Zoxide
-# alias cd="z"
-
 # Tmux
 alias retmux="source ~/.tmux.conf"
 
@@ -225,12 +222,7 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-you-should-use/you-should-use.plugin.zsh
 source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-
-# eval "$(zoxide init zsh)"
-# if [ -z "$DISABLE_ZOXIDE" ]; then
-#     eval "$(zoxide init --cmd cd zsh)"
-# fi
-
+# Zoxide
 [[ $- == *i* ]] && eval "$(zoxide init --cmd cd zsh)"
 
 bindkey '^[[A' history-substring-search-up
@@ -242,17 +234,18 @@ export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
 
-# NVM
-if [ "$MACHINE" = "mini" ]; then
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-  [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+# Machine Specific Configurations
+# if [ "$MACHINE" = "mini" ]; then
+#   export NVM_DIR="$HOME/.nvm"
+# elif [ "$MACHINE" = "air" ]; then
+#   export NVM_DIR="$HOME/.nvm"
+# fi
 
-elif [ "$MACHINE" = "air" ]; then
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
-fi
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 
 # Color Script
 indexes=(30 39 56 55 51 49 30 29 4 21 11 2)
@@ -272,9 +265,6 @@ eval $(thefuck --alias fk)
 export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
 eval "$(tmuxifier init -)"
 
-# Added by Windsurf
-export PATH="$HOME/.codeium/windsurf/bin:$PATH"
-
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
@@ -283,19 +273,11 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f "$HOME/Downloads/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/Downloads/google-cloud-sdk/path.zsh.inc"; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc"; fi
-
 source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
 
 # Android
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools"
-
-nvm use default
 
 # Added by Antigravity
 export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
@@ -303,3 +285,7 @@ export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
 # Bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+
+# Brewsync
+source <(brewsync completion zsh)
