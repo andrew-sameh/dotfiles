@@ -15,6 +15,10 @@ brew "bat"
 brew "btop"
 # Console Bonsai is a bonsai tree generator, written in C using ncurses
 brew "cbonsai"
+# A powerful terminal-based AI assistant for developers, providing intelligent coding assistance directly in your terminal.
+brew "charmbracelet/tap/crush"
+# Generate images of code and terminal output.
+brew "charmbracelet/tap/freeze"
 # A personal key value store 🛼
 brew "charmbracelet/tap/skate"
 # Console Matrix
@@ -49,12 +53,16 @@ brew "gh"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Render markdown on the CLI
+brew "glow"
 # Fast linters runner for Go
 brew "golangci-lint"
 # Command-line tool for generating regular expressions
 brew "grex"
 # ASCII-art displaying typo-corrector for commands
 brew "gti"
+# Tool for glamorous shell scripts
+brew "gum"
 # Terraform
 brew "hashicorp/tap/terraform"
 # Kubernetes package manager
@@ -147,6 +155,8 @@ brew "tmux"
 brew "tree"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Your CLI home video recorder
+brew "vhs"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Internet file retriever
@@ -544,6 +554,7 @@ cursor "ysemeniuk.emmet-live"
 
 # go (brewsync extension)
 go "github.com/air-verse/air"
+go "github.com/andrew-sameh/brewsync/cmd/brewsync"
 go "github.com/go-delve/delve/cmd/dlv"
 go "github.com/maaslalani/nap"
 go "github.com/pressly/goose/v3/cmd/goose"
