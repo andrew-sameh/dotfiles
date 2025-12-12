@@ -63,6 +63,8 @@
       "space b q": "pane::CloseOtherItems",
       "space b c": "pane::CloseCleanItems",
       "space g g": "git_panel::ToggleFocus",
+      "space g c": "editor::ToggleSelectedDiffHunks",
+      "space g h": "editor::ExpandAllDiffHunks",
       "space a a": "workspace::ToggleRightDock",
       "space r": "projects::OpenRecent",
       "ctrl-=": ["workspace::IncreaseOpenDocksSize", { "px": 0 }],
