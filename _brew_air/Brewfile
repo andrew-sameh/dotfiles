@@ -206,6 +206,7 @@ cask "dbeaver-community"
 cask "devtoys"
 # Voice and text chat software
 cask "discord"
+cask "font-jetbrains-mono-nerd-font"
 cask "font-symbols-only-nerd-font"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "gcloud-cli"
@@ -237,6 +238,8 @@ cask "ngrok"
 cask "notion"
 # Calculator and converter application
 cask "numi"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Get up and running with large language models locally
 cask "ollama-app"
 # Replacement for Docker Desktop
