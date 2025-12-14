@@ -180,6 +180,8 @@ cask "aerospace"
 cask "antigravity"
 # Chromium based browser
 cask "arc"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
 # Compare files and folders
 cask "beyond-compare"
 # Desktop password and login vault
