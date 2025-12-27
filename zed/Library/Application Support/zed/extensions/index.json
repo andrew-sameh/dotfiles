@@ -649,7 +649,7 @@
       "manifest": {
         "id": "prisma",
         "name": "Prisma",
-        "version": "0.1.6",
+        "version": "0.1.8",
         "schema_version": 1,
         "description": "Prisma support.",
         "repository": "https://github.com/zed-extensions/prisma",
@@ -730,7 +730,7 @@
       "manifest": {
         "id": "sql",
         "name": "SQL",
-        "version": "1.1.4",
+        "version": "1.1.6",
         "schema_version": 1,
         "description": "SQL language support.",
         "repository": "https://github.com/zed-extensions/sql",
@@ -769,7 +769,7 @@
       "manifest": {
         "id": "terraform",
         "name": "Terraform",
-        "version": "0.1.5",
+        "version": "0.1.6",
         "schema_version": 1,
         "description": "Terraform support.",
         "repository": "https://github.com/zed-extensions/terraform",
@@ -784,8 +784,8 @@
         "themes": [],
         "icon_themes": [],
         "languages": [
-          "languages/terraform-vars",
           "languages/terraform",
+          "languages/terraform-vars",
           "languages/hcl"
         ],
         "grammars": {
@@ -851,7 +851,7 @@
       "manifest": {
         "id": "toml",
         "name": "TOML",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "schema_version": 1,
         "description": "TOML support.",
         "repository": "https://github.com/zed-extensions/toml",

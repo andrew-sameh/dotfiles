@@ -121,6 +121,8 @@ brew "pyenv-virtualenv"
 brew "pyrefly"
 # Static type checker for Python
 brew "pyright"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
 # Persistent key-value database, with built-in net interface
@@ -155,6 +157,8 @@ brew "uv"
 brew "vhs"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
+# Command-line client for WebSockets
+brew "websocat"
 # Internet file retriever
 brew "wget"
 # Library to create, extract, and modify Windows Imaging files
