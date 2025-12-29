@@ -10,14 +10,11 @@
 	process = git-lfs filter-process
 	required = true
 
-[includeIf "gitdir:~/Code/pulse/"]
+[includeIf "gitdir:~/code/pulse/"]
     path = ~/.gitconfig-shadow
 
 
-[includeIf "gitdir:~/Code/rgvs/"]
-    path = ~/.gitconfig-shadow
-
-[includeIf "gitdir:~/Coding/pulse/"]
+[includeIf "gitdir:~/code/rgvs/"]
     path = ~/.gitconfig-shadow
 
 [core]
