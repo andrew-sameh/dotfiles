@@ -888,7 +888,7 @@
       "manifest": {
         "id": "xml",
         "name": "XML",
-        "version": "0.0.9",
+        "version": "0.1.0",
         "schema_version": 1,
         "description": "XML syntax support.",
         "repository": "https://github.com/sweetppro/zed-xml",
